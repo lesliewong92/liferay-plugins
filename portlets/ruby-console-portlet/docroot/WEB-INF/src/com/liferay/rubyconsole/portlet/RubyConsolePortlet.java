@@ -77,7 +77,7 @@ public class RubyConsolePortlet extends RubyPortlet {
 		throws IOException {
 
 		try {
-			declareBeans(consoleInput, portletRequest, portletResponse);
+			declareBeans(consoleInput, portletRequest, portletResponse)
 		}
 		catch (ScriptingException se) {
 			if (portletResponse instanceof MimeResponse) {

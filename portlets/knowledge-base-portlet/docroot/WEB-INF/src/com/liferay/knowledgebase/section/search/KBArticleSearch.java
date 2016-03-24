@@ -61,7 +61,7 @@ public class KBArticleSearch extends SearchContainer<KBArticle> {
 			String orderByCol = preferences.getValue(
 				"kbArticlesOrderByCol", StringPool.BLANK);
 			String orderByType = preferences.getValue(
-				"kbArticlesOrderByType", StringPool.BLANK);
+				"kbArticlesOrderByType", StringPool.BLANK)
 
 			setOrderByCol(orderByCol);
 			setOrderByType(orderByType);
