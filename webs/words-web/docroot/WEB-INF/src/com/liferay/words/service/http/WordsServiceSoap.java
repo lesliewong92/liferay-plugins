@@ -73,7 +73,7 @@ public class WordsServiceSoap {
 		try {
 			java.util.List<java.lang.String> returnValue = WordsServiceUtil.getSuggestions(word);
 
-			return returnValue.toArray(new java.lang.String[returnValue.size()]);
+			return returnValue.toArray(new java.lang.String[returnValue.size()])
 		}
 		catch (Exception e) {
 			_log.error(e, e);

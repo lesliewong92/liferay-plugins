@@ -85,7 +85,7 @@ public abstract class WordsServiceBaseImpl extends BaseServiceImpl
 	 */
 	public void setCounterLocalService(
 		com.liferay.counter.kernel.service.CounterLocalService counterLocalService) {
-		this.counterLocalService = counterLocalService;
+		this.counterLocalService = counterLocalService
 	}
 
 	/**

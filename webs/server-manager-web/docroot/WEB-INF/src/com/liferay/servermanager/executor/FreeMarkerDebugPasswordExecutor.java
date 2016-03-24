@@ -32,11 +32,11 @@ public class FreeMarkerDebugPasswordExecutor extends BaseExecutor {
 		Queue<String> arguments) {
 
 		String freeMarkerDebugPassword = System.getProperty(
-			"freemarker.debug.password");
+			"freemarker.debug.password")
 
 		if (freeMarkerDebugPassword == null) {
 			responseJSONObject.put(
-				JSONKeys.ERROR, "FreeMarker debugger is not enabled");
+				JSONKeys.ERROR, "FreeMarker debugger is not enabled")
 			responseJSONObject.put(JSONKeys.STATUS, 1);
 		}
 		else {
