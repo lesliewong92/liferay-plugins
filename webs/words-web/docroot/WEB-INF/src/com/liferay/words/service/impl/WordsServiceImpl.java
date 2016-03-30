@@ -36,7 +36,7 @@ public class WordsServiceImpl extends WordsServiceBaseImpl {
 			invalidWords.add(invalidWord.getInvalidWord());
 		}
 
-		return invalidWords;
+		return invalidWords
 	}
 
 	@Override

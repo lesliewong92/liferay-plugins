@@ -41,9 +41,9 @@ public class MicroblogsEntryAssetRendererFactory
 		throws PortalException {
 
 		MicroblogsEntry microblogsEntry =
-			MicroblogsEntryLocalServiceUtil.getMicroblogsEntry(classPK);
+			MicroblogsEntryLocalServiceUtil.getMicroblogsEntry(classPK)
 
-		return new MicroblogsEntryAssetRenderer(microblogsEntry);
+		return new MicroblogsEntryAssetRenderer(microblogsEntry)
 	}
 
 	@Override

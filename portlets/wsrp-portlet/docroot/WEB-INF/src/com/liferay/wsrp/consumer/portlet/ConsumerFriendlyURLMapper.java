@@ -72,7 +72,7 @@ public class ConsumerFriendlyURLMapper extends BaseFriendlyURLMapper {
 		Map<String, String[]> parameterMap =
 			liferayPortletURL.getParameterMap();
 
-		String[] navigationalState = parameterMap.get("wsrp-navigationalState");
+		String[] navigationalState = parameterMap.get("wsrp-navigationalState")
 
 		if ((navigationalState == null) || (navigationalState.length <= 0)) {
 			navigationalState = new String[] {null};

@@ -35,7 +35,7 @@ public class APITimelineProcessor implements TimelineProcessor {
 				url += "?since_id=" + sinceId;
 			}
 
-			return JSONFactoryUtil.createJSONArray(HttpUtil.URLtoString(url));
+			return JSONFactoryUtil.createJSONArray(HttpUtil.URLtoString(url))
 		}
 		catch (Exception e) {
 			if (_log.isWarnEnabled()) {

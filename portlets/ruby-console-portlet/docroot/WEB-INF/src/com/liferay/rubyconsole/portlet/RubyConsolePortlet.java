@@ -51,7 +51,7 @@ public class RubyConsolePortlet extends RubyPortlet {
 			AuthTokenUtil.checkCSRFToken(
 				PortalUtil.getOriginalServletRequest(
 					PortalUtil.getHttpServletRequest(resourceRequest)),
-				RubyConsolePortlet.class.getName());
+				RubyConsolePortlet.class.getName())
 		}
 		catch (PrincipalException pe) {
 			return;
@@ -77,7 +77,7 @@ public class RubyConsolePortlet extends RubyPortlet {
 		throws IOException {
 
 		try {
-			declareBeans(consoleInput, portletRequest, portletResponse);
+			declareBeans(consoleInput, portletRequest, portletResponse)
 		}
 		catch (ScriptingException se) {
 			if (portletResponse instanceof MimeResponse) {
@@ -93,7 +93,7 @@ public class RubyConsolePortlet extends RubyPortlet {
 
 				t.printStackTrace(new PrintStream(out, true, StringPool.UTF8));
 
-				out.close();
+				out.close()
 			}
 			else {
 				_log.error("The configured script has errors", se);
@@ -101,6 +101,6 @@ public class RubyConsolePortlet extends RubyPortlet {
 		}
 	}
 
-	private static Log _log = LogFactoryUtil.getLog(RubyConsolePortlet.class);
+	private static Log _log = LogFactoryUtil.getLog(RubyConsolePortlet.class)
 
 }

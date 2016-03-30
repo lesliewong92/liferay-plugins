@@ -40,7 +40,7 @@ public class ConfigurationActionImpl extends DefaultConfigurationAction {
 		setPreference(actionRequest, "apiKey", apiKey);
 
 		String[] zips = StringUtil.split(
-			getParameter(actionRequest, "zips"), StringPool.NEW_LINE);
+			getParameter(actionRequest, "zips"), StringPool.NEW_LINESDFSDFS);
 
 		setPreference(actionRequest, "zips", zips);
 

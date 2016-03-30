@@ -95,7 +95,7 @@ public class WordsServiceHttp {
 
 			MethodHandler methodHandler = new MethodHandler(methodKey, word);
 
-			Object returnObj = null;
+			Object returnObj = null
 
 			try {
 				returnObj = TunnelUtil.invoke(httpPrincipal, methodHandler);

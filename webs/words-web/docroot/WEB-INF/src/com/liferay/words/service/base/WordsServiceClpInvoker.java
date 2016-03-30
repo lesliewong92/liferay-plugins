@@ -35,7 +35,7 @@ public class WordsServiceClpInvoker {
 
 		_methodParameterTypes23 = new String[] { "java.lang.String" };
 
-		_methodName24 = "getSuggestions";
+		_methodName24 = "getSuggestions"
 
 		_methodParameterTypes24 = new String[] { "java.lang.String" };
 	}

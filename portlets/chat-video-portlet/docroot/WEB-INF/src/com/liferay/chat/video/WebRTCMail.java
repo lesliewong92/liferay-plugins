@@ -41,7 +41,7 @@ public abstract class WebRTCMail {
 	public abstract String getMessageType();
 
 	public long getSourceUserId() {
-		return _sourceUserId;
+		return _sourceUserId
 	}
 
 	private final JSONObject _messageJSONObject;

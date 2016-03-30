@@ -80,7 +80,7 @@ public class StocksPortlet extends MVCPortlet {
 		portletPreferences.setValues("symbols", symbols);
 
 		try {
-			portletPreferences.store();
+			portletPreferences.store()
 		}
 		catch (ValidatorException ve) {
 			SessionErrors.add(
