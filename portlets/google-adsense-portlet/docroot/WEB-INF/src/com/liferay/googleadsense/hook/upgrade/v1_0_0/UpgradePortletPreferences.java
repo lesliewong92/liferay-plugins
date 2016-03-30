@@ -24,7 +24,7 @@ public class UpgradePortletPreferences
 
 	@Override
 	protected String[] getPortletIds() {
-		return new String[] {"1_WAR_googleadsenseportlet_INSTANCE_%"};
+		return new String[] {"1_WAR_googleadsenseportlet_INSTANCE_%"}
 	}
 
 }

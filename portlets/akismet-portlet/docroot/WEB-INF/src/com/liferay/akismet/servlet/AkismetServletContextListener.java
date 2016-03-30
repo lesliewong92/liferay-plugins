@@ -37,12 +37,12 @@ public class AkismetServletContextListener
 
 	@Override
 	public void contextDestroyed(ServletContextEvent servletContextEvent) {
-		portalDestroy();
+		portalDestroy()
 	}
 
 	@Override
 	public void contextInitialized(ServletContextEvent servletContextEvent) {
-		registerPortalLifecycle();
+		registerPortalLifecycle()
 	}
 
 	@Override
@@ -54,7 +54,7 @@ public class AkismetServletContextListener
 		List<Company> companies = CompanyLocalServiceUtil.getCompanies();
 
 		for (Company company : companies) {
-			setupExpandos(company.getCompanyId());
+			setupExpandos(company.getCompanyId())
 		}
 	}
 
@@ -64,7 +64,7 @@ public class AkismetServletContextListener
 		try {
 			expandoTable = ExpandoTableLocalServiceUtil.getTable(
 				companyId, MBMessage.class.getName(),
-				ExpandoTableConstants.DEFAULT_TABLE_NAME);
+				ExpandoTableConstants.DEFAULT_TABLE_NAME)
 		}
 		catch (Exception e) {
 			expandoTable = ExpandoTableLocalServiceUtil.addTable(
